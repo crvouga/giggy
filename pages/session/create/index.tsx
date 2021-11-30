@@ -1,11 +1,13 @@
+import Link from "next/link";
 import {
-  Button,
-  Select,
-  Container,
   AppBar,
+  Avatar,
+  Button,
+  Container,
+  Select,
+  TextField,
   Toolbar,
   Typography,
-  TextField,
 } from "@mui/material";
 
 export default function SessionCreate() {
@@ -16,6 +18,9 @@ export default function SessionCreate() {
           <Typography sx={{ flex: 1 }} variant="h6">
             Create
           </Typography>
+          <Link passHref href="/account">
+            <Avatar />
+          </Link>
         </Toolbar>
       </AppBar>
       <Container sx={{ my: 2 }}>
