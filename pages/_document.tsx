@@ -5,7 +5,6 @@ import { theme } from "../src/theme";
 import { createEmotionCache } from "../src/create-emotion-cache";
 
 export default class CustomDocument extends Document {
-  
   render() {
     return (
       <Html lang="en">
@@ -25,8 +24,6 @@ export default class CustomDocument extends Document {
     );
   }
 }
-
-
 
 // `getInitialProps` belongs to `_document` (instead of `_app`),
 // it's compatible with static-site generation (SSG).
