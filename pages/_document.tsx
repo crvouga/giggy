@@ -4,7 +4,8 @@ import createEmotionServer from "@emotion/server/create-instance";
 import { theme } from "../src/theme";
 import { createEmotionCache } from "../src/create-emotion-cache";
 
-export default class MyDocument extends Document {
+export default class CustomDocument extends Document {
+  
   render() {
     return (
       <Html lang="en">
@@ -25,9 +26,11 @@ export default class MyDocument extends Document {
   }
 }
 
+
+
 // `getInitialProps` belongs to `_document` (instead of `_app`),
 // it's compatible with static-site generation (SSG).
-MyDocument.getInitialProps = async (ctx) => {
+CustomDocument.getInitialProps = async (ctx) => {
   // Resolution order
   //
   // On the server:

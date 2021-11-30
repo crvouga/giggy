@@ -1,17 +1,19 @@
-import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { orange } from "@mui/material/colors";
 
-export const theme = createTheme({
-  palette: {
-    mode: "dark",
-    primary: {
-      main: "#556cd6",
+export const theme = responsiveFontSizes(
+  createTheme({
+    palette: {
+      mode: "dark",
+      primary: orange,
     },
-    secondary: {
-      main: "#19857b",
+
+    components: {
+      MuiContainer: {
+        defaultProps: {
+          maxWidth: "sm",
+        },
+      },
     },
-    error: {
-      main: red.A400,
-    },
-  },
-});
+  })
+);
