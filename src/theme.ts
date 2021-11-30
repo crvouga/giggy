@@ -1,8 +1,11 @@
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { orange } from "@mui/material/colors";
+import {
+  createTheme as createMuiTheme,
+  responsiveFontSizes
+} from "@mui/material/styles";
 
 export const theme = responsiveFontSizes(
-  createTheme({
+  createMuiTheme({
     palette: {
       mode: "dark",
       primary: orange,
